@@ -1,0 +1,91 @@
+input[type="text"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+#tasks {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+:checked+label {
+    text-decoration: line-through;
+    color: grey;
+}
+
+.task-item {
+    font-size: 20px;
+}
+
+.task-item:hover {
+    cursor: pointer;
+}
+
+.checkbox {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 24px;
+}
+
+.checkbox input {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.checkbox label {
+    position: relative;
+    padding-left: 2.2em;
+    display: inline-block;
+}
+
+.checkbox label::before {
+    border-radius: 8px;
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 1.3em;
+    width: 1.3em;
+    background: #FFF;
+    margin-right: 0.5em;
+    border: 1px solid #999;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+}
+
+.checkbox label::after {
+    content: "\2713";
+    position: absolute;
+    top: 50%;
+    left: 0.75em;
+    transform: translate(-50%, -50%);
+    font-size: 1em;
+    color: #FFF;
+    opacity: 0;
+    transition: all 0.2s ease;
+}
+
+.checkbox label:focus::before,
+.checkbox label:hover::before {
+    background: #DDD;
+}
+
+.checkbox input:checked+label::before {
+    background: #69e65d;
+    border-color: #ff7212;
+}
+
+.checkbox input:checked+label::after {
+    opacity: 1;
+}
