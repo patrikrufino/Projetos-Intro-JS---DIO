@@ -2,7 +2,7 @@
 
 <p>Estes desafios foram propostos no curso de <strong>Introdução ao Javascript</strong>, oferecido pela plataforma da <strong>DIO</strong>.</p>
 * <strong>Mentora:</strong>Stephany Nusch
-
+* <strong>Acesse o Projeto:</strong>https://patrikrufino.github.io/Projetos-Intro-JS-DIO.io/
 ## Desafio do Contador
 https://patrikrufino.github.io/Projetos-Intro-JS-DIO.io/Contador/
 ![image](https://user-images.githubusercontent.com/58515198/172057062-5b1956c1-891c-4aba-93d8-11d7acde0c49.png)
